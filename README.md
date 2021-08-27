@@ -1,6 +1,8 @@
 # oci-dns
 DNS in OCI overview
 
+The Domain Name System (DNS) is a distributed internet system that maps human-readable names (like www.Oracle.com) to IP addresses and serves as the first link in the customers’ digital supply chain. Oracle's globally distributed DNS service offers enhanced DNS performance, resiliency, and scalability, so that end users connect to customers’ application as quickly as possible, from wherever they are.
+
 Commom types in OCI DNS
 
 ![image](https://user-images.githubusercontent.com/22028539/131132497-5c6c0b8f-16f6-4087-9679-4b6fb5ffc2f2.png)
@@ -9,7 +11,11 @@ Exclusive on OCI for internal resouces and services:
 
 ![image](https://user-images.githubusercontent.com/22028539/131132579-f0227b17-bb06-48b3-ba92-ef39f11607ff.png)
 
+OCI DNS services available:
+
 ![image](https://user-images.githubusercontent.com/22028539/131132844-a0b0432b-2ad9-421d-9cb6-650662aef587.png)
+
+[Record types description](https://docs.oracle.com/en-us/iaas/Content/DNS/Reference/supporteddnsresource.htm)
 
 Steps in Console:
 
@@ -45,3 +51,4 @@ Domains delegation to OCI:
 ### DNS Privado
 #### Solução de problemas
 ### Métricas do DNS
+

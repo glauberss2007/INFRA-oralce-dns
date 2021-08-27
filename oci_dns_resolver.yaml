@@ -1,0 +1,24 @@
+resource "oci_dns_resolver" "test_resolver" {
+    #Required
+    resolver_id = oci_dns_resolver.test_resolver.id
+    scope = "PRIVATE"
+
+    #Optional
+    attached_views {
+        #Required
+        view_id = oci_dns_view.test_view.id
+    }
+    defined_tags = var.resolver_defined_tags
+    display_name = var.resolver_display_name
+    freeform_tags = var.resolver_freeform_tags
+    rules {
+        #Required
+        action = var.resolver_rules_action
+        destination_addresses = var.resolver_rules_destination_addresses
+        source_endpoint_name = var.resolver_rules_source_endpoint_name
+
+        #Optional
+        client_address_conditions = var.resolver_rules_client_address_conditions
+        qname_cover_conditions = var.resolver_rules_qname_cover_conditions
+    }
+}

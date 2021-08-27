@@ -34,7 +34,8 @@ Domains delegation to OCI:
 
 ## Using terraform
 
-[oci_dns_zone](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_zone)
+[oci_dns_zone](https://github.com/glauberss2007/oci-dns/blob/main/oci_dns_zone.yaml)
+[Explanation](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_zone)
 
 References: https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_zone
 

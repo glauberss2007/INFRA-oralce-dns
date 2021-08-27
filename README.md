@@ -33,9 +33,12 @@ Domains delegation to OCI:
 4. Log to your domain registre portal and append a NS record for each nameserver in your 
 
 ## Using terraform
+1. [oci_dns_zone](https://github.com/glauberss2007/oci-dns/blob/main/oci_dns_zone.yaml)
+2. [oci_dns_record](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_record)
+3. [oci_dns_resolver](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_resolver)
+4. [oci_dns_view](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_view)
 
-[oci_dns_zone](https://github.com/glauberss2007/oci-dns/blob/main/oci_dns_zone.yaml)
-[Explanation](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_zone)
+[DNS resources explanation]https://registry.terraform.io/providers/hashicorp/oci/latest/docs/data-sources/dns_records)
 
 References: https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_zone
 

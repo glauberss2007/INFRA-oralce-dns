@@ -1,23 +1,19 @@
 # oci-dns
-DNS in OCI overview
+![image](https://user-images.githubusercontent.com/22028539/131153906-6345d3ec-78f1-4d42-8b23-dd684d34a22c.png)
 
 The Domain Name System (DNS) is a distributed internet system that maps human-readable names (like www.Oracle.com) to IP addresses and serves as the first link in the customers’ digital supply chain. Oracle's globally distributed DNS service offers enhanced DNS performance, resiliency, and scalability, so that end users connect to customers’ application as quickly as possible, from wherever they are.
 
-Commom types in OCI DNS
+## DNS Service Components
+1. Domain: example.com or oracle.com
+2. zone: parte do namespace de DNS
+3. label: labels são pré-anexados ao nome da zona ("www' de um site ou "docs" de docs.us-ashburn-1.oraclecloud.com, por exemplo )
+4. child zone: subdomínios independentes com seus próprios registros
+5. registro de recurso (RDATA): o registro depende do tipo [Record types description](https://docs.oracle.com/en-us/iaas/Content/DNS/Reference/supporteddnsresource.htm)
+6. delegação: servidores de nomes gerenciavel contendo os DNSs
 
-![image](https://user-images.githubusercontent.com/22028539/131132497-5c6c0b8f-16f6-4087-9679-4b6fb5ffc2f2.png)
+## GUI console access
 
-Exclusive on OCI for internal resouces and services:
-
-![image](https://user-images.githubusercontent.com/22028539/131132579-f0227b17-bb06-48b3-ba92-ef39f11607ff.png)
-
-OCI DNS services available:
-
-![image](https://user-images.githubusercontent.com/22028539/131132844-a0b0432b-2ad9-421d-9cb6-650662aef587.png)
-
-[Record types description](https://docs.oracle.com/en-us/iaas/Content/DNS/Reference/supporteddnsresource.htm)
-
-Steps in Console:
+[Link of GUI console](https://console.sa-saopaulo-1.oraclecloud.com/)
 
 Select Networking > DNS > DNS-Zones > Add Zone
 
@@ -36,7 +32,11 @@ Domains delegation to OCI:
 3. Copy the four Nameservers
 4. Log to your domain registre portal and append a NS record for each nameserver in your 
 
-[Link of GUI console](https://console.sa-saopaulo-1.oraclecloud.com/)
+## Using terraform
+
+[oci_dns_zone](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_zone)
+
+References: https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/dns_zone
 
 ## Serviço DNS
 ### Usando a Visão Geral do Gerenciamento do DNS para Gerenciar Serviços do DNS
